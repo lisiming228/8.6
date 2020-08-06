@@ -1,0 +1,175 @@
+
+<!DOCTYPE html >
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>		
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" type="text/css"  href="css/common.css"/>
+		<title>仿写练习</title>
+		<meta name="description" content="哈尔滨铭辉安防设备有限公司">
+		<meta name="keywords" content="哈尔滨铭辉安防设备有限公司">
+	</head>
+	
+	<body>
+		<!-- 头部 -->
+			<div class="nr pos">
+			<div class="header over">	
+				<a href="#"><img src="image/logo.jpg" alt="" class="logo"></a>
+				<a href="#" class="phone_nav"><img src="image/icon21.png" alt=""></a>
+				<img src="image/search.png" alt="" class="search">
+				<div class="ser_k">
+                    <form action="" method="get" id="form">
+                        <input type="text" placeholder="请输入搜索内容" class="ser_input" name="key" id="key" required>
+                        <input type="hidden" name="p" value="seach_list">
+                        <img src="image/search.png" alt="" class="ser_icon" id="seach">
+                    </form>
+				</div>
+				<!-- 导航 -->
+				
+				<ul class="p_nav">
+					<li> <a href="#">首页</a> </li>
+                    <li> <a href="#">关于铭辉</a> </li>
+                    <li> <a href="#">产品中心</a> </li>
+                    <li> <a href="#">服务项目</a> </li>
+                    <li> <a href="#">成功案例</a> </li>
+                    <li> <a href="#">新闻中心</a> </li>
+                    <li> <a href="#">联系我们</a> </li>
+				    
+				</ul>
+			</div>
+			
+		</div>
+
+		<div class="swiper-container min" id="swiper0">
+			<div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="image/banner1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/banner2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/banner3.jpg" alt="">
+                </div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!-- 内容 -->
+		<div class="nr">
+			<div class="title">
+				<div class="title_t1">关于铭辉</div>
+				<div class="title_t2">专业从事安防监控设备批发、安防建设工程设计与施工</div>
+			</div>
+			<ul class="about_list">
+				<li>
+					<div class="about_list_nr_k"></div>
+					<a href="#">
+						<div class="about_list_nr">
+							<div class="about_icon1"></div>
+							<div class="about_text1">公司简介</div>
+						</div>												
+						<div class="about_text2">Company Profile</div>
+					</a>
+				</li>
+				<li>
+					<div class="about_list_nr_k"></div>
+					<a href="#">
+						<div class="about_list_nr">
+						<div class="about_icon1"></div>
+						<div class="about_text1">公司简介</div>
+						</div>
+						<div class="about_text2">Company Profile</div>
+					</a>
+				</li>
+				<li>
+					<div class="about_list_nr_k"></div>
+					<a href="#">
+						<div class="about_list_nr2">
+						<div class="about_icon2"></div>
+						<div class="about_text1">公司简介</div>
+						</div>
+						<div class="about_text2">Company Profile</div>
+					</a>
+				</li>
+				<li>
+					<div class="about_list_nr_k"></div>
+					<a href="#">
+						<div class="about_list_nr2">
+						<div class="about_icon2"></div>
+						<div class="about_text1">公司简介</div>
+						</div>
+						<div class="about_text2">Company Profile</div>
+					</a>
+				</li>
+				<li>
+					<div class="about_list_nr_k"></div>
+					<a href="#">
+						<div class="about_list_nr2">
+						<div class="about_icon2"></div>
+						<div class="about_text1">公司简介</div>
+						</div>
+						<div class="about_text2">Company Profile</div>
+					</a>
+				</li>
+				<div class="cl"></div>
+			</ul>
+			</div>
+					
+		<script>
+		   if($(window).width()>1023){
+		   	$('#pc_ban_one').show();
+		   	$('#m_ban_one').hide();
+		   }else{
+		   	$('#pc_ban_one').hide();
+		   	$('#m_ban_one').show();
+		   }
+		   $(window).resize(function(){
+		    if($(window).width()>1023){
+		   		$('#pc_ban_one').show();
+		   		$('#m_ban_one').hide();
+		   }else{
+		   		$('#pc_ban_one').hide();
+		   		$('#m_ban_one').show();
+		   }
+		   })
+ 	   </script>
+		<script>
+			var swiper0 = new Swiper('#swiper0', {
+				//autoplay: true,//可选选项，自动滑动
+				autoplay : {
+					delay:5000
+				},
+				// navigation: {
+				// 	nextEl: '.swiper-button-next',
+				// 	prevEl: '.swiper-button-prev',
+				// },
+				pagination: {
+					el: '.swiper-pagination',
+					clickable :true,
+				},
+				loop : true,
+			});
+			$(".m_l_list li > a").click(function(){
+				$(this).siblings(".m_list_nav").slideToggle();
+				$(this).toggleClass("current")
+			})
+			$(".m_l_btn").click(function(){
+				$(".m_l_list").slideToggle()
+				$(this).toggleClass("m_l_btn1")
+			})
+			$(".phone_nav").click(function(){
+				$(".p_nav").toggleClass("p_nav1")
+			})
+			$(".search").click(function(){
+				$(".ser_k").slideToggle()
+			})
+		</script>
+				
+
+	</body>
+
+</html>
