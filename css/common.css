@@ -108,42 +108,39 @@ input{
 .about_list li:hover .about_line{background:#fff;}
 
 
-@media screen and (max-width:829px) {
 
-	.title{}
+#swiper1 .swiper-slide{position:relative;overflow:hidden;display:inline-block;width:auto;height:auto;transition: all 0.5s;margin:0!important;}
+#swiper1 .swiper-slide:hover{width:7.9rem;transition: all 0.5s}
+#swiper1 .swiper-slide img{width:auto;height:1.8rem;max-width:none;}
 
-	.title_t1{}
+#swiper1 .swiper-slide:hover .ser_pf{transition:all 0.5s;opacity:1;visibility:visible;}
 
-	.title_t2{}
+#swiper1 .swiper-slide:hover .ser_text{display:none;}
 
+#swiper1 .swiper-button-prev{width:0.29rem;height:0.33rem;background:url(../image/icon8.png) no-repeat center center/100% 100%;opacity:1;z-index: 99}
 
-	.ser_text{padding:0 0.1rem 0.1rem 0.1rem;color:#fff;line-height:1.3;}
+#swiper1 .swiper-button-next{width:0.29rem;height:0.33rem;background:url(../image/icon9.png) no-repeat center center/100% 100%;opacity:1;z-index: 99}
+.ser_text{padding:0 0.1rem 0.1rem 0.1rem;color:#fff;line-height:1.3;}
 
-	.ser_text1{font-size:0.18rem;}
+.ser_text{width:100%;position:absolute;left:0;bottom:0;padding:0 0 0.2rem 0.4rem;color:#fff;line-height:1.3;}
 
-	.ser_text2{font-size:0.14rem;}
+.ser_text1{font-size:0.24rem;}
 
-	.ser_pf{display:none;}
+.ser_text2{font-size:0.16rem;}
 
-	.about_list{}
+.ser_pf{width:100%;height:100%;position:absolute;left:0;top:0;padding:0.6rem 0.4rem 0 0.4rem;background:rgba(0,0,0,0.4);color:#fff;line-height:1.3;opacity:0;transition: all 0.5s;visibility: hidden;}
 
-	.about_list li{}
+.ser_pf_t{font-size:0.16rem;margin:0.4rem 0 0.5rem 0;overflow:hidden;line-height:0.26rem;height:0.52rem;overflow:hidden;}
 
-	.about_list li a{}
+.ser_pf_icon{width:0.44rem;}
 
-	.about_text1{}
+.ser_pf_icon img{width:100%!important;height:auto!important;}
 
-	.about_text2{}
-
-	
-
-	.about_icon1{}
-
-	.about_icon2{}
-
-    .about_list_nr{}
-    .about_list_nr2{}
-}
+.ser_more{font-size:0.2rem;width:2.6rem;height:0.58rem;line-height:0.58rem;border-radius:0.29rem;display:block;background:#84a8ee;color:#fff;text-align:center;margin:0.5rem auto 0.8rem;}
 
 
+.ser_text1{font-size:0.18rem;}
 
+.ser_text2{font-size:0.14rem;}
+
+.ser_pf{display:none;}

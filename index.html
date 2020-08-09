@@ -117,8 +117,77 @@
 				</li>
 				<div class="cl"></div>
 			</ul>
+		</div>
+		<div class="title">
+			<div class="title_t1">我们的服务</div>
+			<div class="title_t2">贴合您的业务场景，轻松实现方案集成</div>
+		</div>
+		<div class="swiper-container min" id="swiper1">
+			<div class="swiper-wrapper">
+      				<div class="swiper-slide">
+					<img src="image/service1.jpg" alt="">
+					<div class="ser_text">
+						<div class="ser_text1">旅游景区解决方案</div>
+						<div class="ser_text2">Tourist attraction</div>
+					</div>
+				</div>	
+				<div class="swiper-slide">
+					<img src="image/service2.jpg" alt="">
+					<div class="ser_text">
+						<div class="ser_text1">智能变电站综合辅助系统解决方</div>
+						<div class="ser_text2">Intelligent Substation</div>
+					</div>
+				</div>	
+				<div class="swiper-slide">
+					<img src="image/service1.jpg" alt="">
+					<div class="ser_text">
+						<div class="ser_text1">农业解决方案</div>
+						<div class="ser_text2">Agricultural Solutions</div>
+					</div>
+				</div>	
+				<div class="swiper-slide">
+					<img src="image/service2.jpg" alt="">
+					<div class="ser_text">
+						<div class="ser_text1">智慧监狱整体解决方案</div>
+						<div class="ser_text2">Wisdom Prison</div>
+					</div>
+				</div>	
+				<div class="swiper-slide">
+					<img src="image/service1.jpg" alt="">
+					<div class="ser_text">
+						<div class="ser_text1">企业综合安防解决方案</div>
+						<div class="ser_text2">Enterprise Comprehensive Security</div>
+					</div>
+				</div>	
+				<div class="swiper-slide">
+					<img src="image/service2.jpg" alt="">
+					<div class="ser_text">
+						<div class="ser_text1">智慧社区解决方案</div>
+						<div class="ser_text2">Smart Community</div>
+					</div>
+				</div>	
+				<div class="swiper-slide">
+					<img src="image/service1.jpg" alt="">
+					<div class="ser_text">
+						<div class="ser_text1">智慧园区解决方案</div>
+						<div class="ser_text2">Smart Park</div>
+					</div>
+				</div>	
+				<div class="swiper-slide">
+					<img src="image/service2.jpg" alt="">
+					<div class="ser_text">
+						<div class="ser_text1">森林防火系统解决方案</div>
+						<div class="ser_text2">Forest Fire Prevention</div>
+					</div>
+				</div>	
+			  
+
 			</div>
-					
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			
+		</div>			
 		<script>
 		   if($(window).width()>1023){
 		   	$('#pc_ban_one').show();
@@ -152,6 +221,25 @@
 					clickable :true,
 				},
 				loop : true,
+			});
+			var swiper1 = new Swiper('#swiper1', {
+				autoplay: true,//可选选项，自动滑动
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				// pagination: {
+				// 	el: '.swiper-pagination',
+				// 	clickable :true,
+				// },
+				slidesPerView:'auto',
+				spaceBetween : 20,
+				breakpoints: { 
+			    768: {  //当屏幕宽度大于等于768 
+			      slidesPerView: 1,
+			      spaceBetween: 0
+			    }
+			  }
 			});
 			$(".m_l_list li > a").click(function(){
 				$(this).siblings(".m_list_nav").slideToggle();
