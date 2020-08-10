@@ -108,7 +108,107 @@ header{
     margin:0.1rem 0 0 0;
 }
 
+/* 主要内容 */
+.poster{
+    background: url(../image/banner-top.jpg) no-repeat center center;
+	position: relative;
+	min-width:100%;height:4rem;
+}
+.poster-text{
+    width:100%;
+    position:absolute;
+    left:0;top:50%;
+    transform: translate(0,-50%);
+    color:#d6e7ff;
+    font-size:0.28rem;
+    padding:0 3%;
+    line-height:1.5;
+}
+.poster-text1{
+	font-size:0.36rem;
+	color:#fff;
+}
+.main{
+	width:100%;
+	margin:0 auto;
+	padding:0 0 5% 0;
+	overflow: hidden;
+}
+.main-menu{
+	width:100%;
+}
+.main-menu-title{
+	height:0.9rem;
+	line-height:0.9rem;
+	padding:0 0 0 0.8rem;
+	position:relative;
+	font-size:0.36rem;
+	background:#84a8ee;
+	color:#fff;
+}
+.main-menu-line{
+	width:0.3rem;
+	position:absolute;
+	left:0.3rem;
+	top:50%;
+	transform: translateY(-50%);
+}
 
+.main-menu-line span{
+	width:100%;
+	height:0.04rem;
+	background:#fff;
+	margin:0.06rem 0;
+	display:block;
+	line-height:1;
+}
+.main-content {
+    width: 100%;
+	float: none;
+	margin-top:0.2rem;
+}
+.main-content-title{
+	text-align: center;
+    height: 0.8rem;
+    position: relative;
+    margin: 0.1rem 0 0.5rem 0;
+	overflow: visible;
+	border-bottom: solid 1px #dddddd;
+}
+.main-content-title-top{
+	font-size: 0.36rem;
+    position: absolute;
+    top:0;
+    text-align: center;
+    display:inline-block;
+    padding: 0;
+    margin:auto;
+	line-height: 0.8rem;
+	color: #84a8ee;
+    border-bottom: solid 0.04rem #84a8ee;
+    transform: translateX( -50%);
+}
+.main-content-title-bottom{
+	font-size: 0.28rem;
+    line-height: 0.8rem;
+    display: inline-block;
+    float: none;
+    position: absolute;
+    bottom: -0.8rem;
+    left: 50%;
+    padding: 0 0 0 0.4rem;
+    transform: translateX(-50%);
+	white-space: nowrap;
+	color: #666666;
+    background: url(../image/icon14.png) no-repeat left center;
+}
+.main-content-title-bottom a {
+    color: #666666;
+}
+.main-content-bottom{
+	padding: 5%;
+}
+/* 主要内容结束 */
 
 /* 底部开始 */
 .bottom{
