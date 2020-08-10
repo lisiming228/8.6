@@ -1,0 +1,11 @@
+.m_r_title{text-align:center;height:auto;position:relative;margin:0.1rem 0 0.5rem 0;overflow:visible;}
+
+	.m_r_title_t{font-size:0.36rem;display:inline-block;float:none;padding:0;height:0.8rem;line-height:0.8rem;}
+
+	.m_r_title_r{font-size:0.28rem;line-height:0.8rem;display:inline-block;float:none;position:absolute;bottom:-0.8rem;left:50%;padding:0 0 0 0.4rem;transform: translateX(-50%);white-space:nowrap;}
+
+	.m_l_btn{width:0.2rem;height:0.2rem;display:block;position:absolute;right:5%;top:50%;transform: translateY(-50%) rotate(180deg);background:url(../images/icon23.png) no-repeat center center/cover;}
+
+	.m_l_btn1{transform: translateY(-50%) rotate(0);}
+
+	.m_l_list{display:none;}

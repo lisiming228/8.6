@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>		
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" type="text/css"  href="css/about.css"/>
+        <link rel="stylesheet" type="text/css"  href="css/common.css"/>
+        <link rel="stylesheet" type="text/css"  href="css/contact.css"/>
+		<title>仿写练习</title>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="header-inner">	
+            <a href="#"><img src="image/logo.jpg" alt="" class="logo"></a>
+            <a href="#" class="header-nav"><img src="image/icon21.png" alt=""></a>
+            <img src="image/search.png" class="search">
+            <div class="search-part">
+                <form>
+                    <input type="text" placeholder="请输入搜索内容" class="search-input">
+                    <img src="image/search.png" alt="" class="search-icon">
+                </form>
+            </div>
+            <!-- 导航 -->
+            <ul class="hidden-nav">
+                <li> <a href="index.html">首页</a> </li>
+                <li> <a href="about.html">关于铭辉</a> </li>
+                <li> <a href="service.html">产品中心</a> </li>
+                <li> <a href="#">服务项目</a> </li>
+                <li> <a href="#">成功案例</a> </li>
+                <li> <a href="news.html">新闻中心</a> </li>
+                <li> <a href="contact.html">联系我们</a> </li>
+            </ul>
+        </div>
+    </header>
+    	
+    <div class="min poster" id="m_ban_one" >
+        <div class="m_j_nr">
+            <div class="m_j_text1">黑龙江安防常任理事单位</div>
+            <div>专业从事安防监控设备批发、安防建设工程设计与施工</div>
+        </div>
+    </div>		
+    <div class="nr m_nr over">
+        <div class="m_l">
+            <div class="m_l_title"><div class="m_l_line"><span></span><span></span><span></span></div><div class="m_l_btn"></div>联系我们</div>
+            <ul class="m_l_list">
+                
+                    <li><a href="index.php?p=about&lanmu=9&id=2" >联系我们</a></li>
+                            <li><a href="index.php?p=hzhb_list&lanmu=4">合作伙伴</a></li>
+            </ul>
+            
+            <div class="m_l_bot">
+                <div class="m_l_bot_text1">以人为本 用户至上</div>
+                <div class="m_l_bot_text2">让每个客户满意，让我们在长期的合作中实现共赢</div>
+                <div class="m_l_bot_text3">全国咨询热线</div>
+                <div class="m_l_bot_text4">15846066999 </div>
+            </div>
+        </div>
+        <div class="m_r">
+            <div class="m_r_title">
+                <div class="m_r_title_t">联系我们</div>
+                <div class="m_r_title_r">
+                    您的当前位置：<a href="index.html">网站首页</a>  /  <a href="contact.html">联系我们</a>  /  联系我们
+                </div>
+            </div>
+            
+            <div class="coop_list1">
+                黑龙江省哈尔滨市南岗区宣普街32号
+            </div>
+            
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="common bottom-inner over">
+            <div class="bottom-top">
+                <div class="bottom-logo">
+                    <img src="image/bottom-logo.png" alt="">
+                </div>
+                <div class="bottom-img">
+                    <img src="image/QQ.png" alt="">
+                    <img src="image/wechat.png" alt="">
+                </div>
+                <div>
+                    <span style="color:#FFFFFF;">技术支持：</span>
+                    <a href="#">
+                        <span style="color:#FFFFFF;">龙采科技</span>
+                    </a><br />
+                    <span style="color:#FFFFFF;"> 备案号：</span>
+                    <a href="#">
+                        <span style="color:#FFFFFF;">黑ICP备17002433号</span>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom-middle">
+                <div class="bottom-middle-title">联系我们</div>
+                <div class="bottom-middle-content">总部地址：黑龙江省哈尔滨市南岗区宣普街32号<br />
+                电话：王经理&nbsp;<span style="line-height:1.5;">15846066999</span><br />
+                传真：0451-82536466</div>
+            </div>
+            <div class="bottom-bottom">
+                <div class="bottom-bottom-title">快捷链接</div>
+                <div>
+                    
+                    <a href="#" target="">联系我们</a>
+                    <a href="#" target="">新闻中心</a>
+                    <a href="#" target="">成功案例</a>
+                    <a href="#" target="">服务项目</a>
+                    <a href="#" target="">产品中心</a>
+                    <a href="#" target="">关于铭辉</a>
+                    <a href="#" target="">首页</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright &copy; 2020 哈尔滨铭辉安防设备有限公司 <br>All rights reserved</div>
+    </div>
+    <!-- 底部结束 -->
+    <script>
+        var swiper0 = new Swiper('#swiper0', {
+            autoplay : {
+                delay:5000
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable :true,
+            },
+            loop : true,
+        });
+        var swiper1 = new Swiper('#swiper1', {
+            autoplay: true,//可选选项，自动滑动
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView:'auto',
+            spaceBetween : 20,
+            breakpoints: { 
+            768: {  //当屏幕宽度大于等于768 
+              slidesPerView: 1,
+              spaceBetween: 0
+            }
+          }
+        });
+        $(".header-nav").click(function(){
+            $(".hidden-nav").toggleClass("visible-nav")
+        })
+        $(".search").click(function(){
+            $(".search-part").slideToggle()
+        })
+    </script>
+</body>
+</html>

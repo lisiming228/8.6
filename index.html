@@ -1,50 +1,43 @@
-
 <!DOCTYPE html >
 <html>
-
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
 		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>		
 		<script type="text/javascript" src="js/swiper.min.js"></script>
 		<link rel="stylesheet" href="css/swiper.min.css">
 		<link rel="stylesheet" type="text/css"  href="css/common.css"/>
+		<link rel="stylesheet" href="css/index.css">
 		<title>仿写练习</title>
-		<meta name="description" content="哈尔滨铭辉安防设备有限公司">
-		<meta name="keywords" content="哈尔滨铭辉安防设备有限公司">
 	</head>
 	
 	<body>
 		<!-- 头部 -->
-			<div class="nr pos">
-			<div class="header over">	
+		<header>
+			<div class="header-inner">	
 				<a href="#"><img src="image/logo.jpg" alt="" class="logo"></a>
-				<a href="#" class="phone_nav"><img src="image/icon21.png" alt=""></a>
-				<img src="image/search.png" alt="" class="search">
-				<div class="ser_k">
-                    <form action="" method="get" id="form">
-                        <input type="text" placeholder="请输入搜索内容" class="ser_input" name="key" id="key" required>
-                        <input type="hidden" name="p" value="seach_list">
-                        <img src="image/search.png" alt="" class="ser_icon" id="seach">
+				<a href="#" class="header-nav"><img src="image/icon21.png" alt=""></a>
+				<img src="image/search.png" class="search">
+				<div class="search-part">
+                    <form>
+                        <input type="text" placeholder="请输入搜索内容" class="search-input">
+                        <img src="image/search.png" alt="" class="search-icon">
                     </form>
 				</div>
 				<!-- 导航 -->
-				
-				<ul class="p_nav">
-					<li> <a href="#">首页</a> </li>
-                    <li> <a href="#">关于铭辉</a> </li>
-                    <li> <a href="#">产品中心</a> </li>
+				<ul class="hidden-nav">
+					<li> <a href="index.html">首页</a> </li>
+                    <li> <a href="about.html">关于铭辉</a> </li>
+                    <li> <a href="service.html">产品中心</a> </li>
                     <li> <a href="#">服务项目</a> </li>
                     <li> <a href="#">成功案例</a> </li>
-                    <li> <a href="#">新闻中心</a> </li>
-                    <li> <a href="#">联系我们</a> </li>
+                    <li> <a href="news.html">新闻中心</a> </li>
+					<li> <a href="contact.html">联系我们</a> </li>
 				    
 				</ul>
 			</div>
-			
-		</div>
-
-		<div class="swiper-container min" id="swiper0">
+		</header>
+		<div class="swiper-container" id="swiper0">
 			<div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="image/banner1.jpg" alt="">
@@ -58,8 +51,8 @@
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
-		<!-- 内容 -->
-		<div class="nr">
+		<!-- 关于铭辉开始 -->
+		<div class="common">
 			<div class="title">
 				<div class="title_t1">关于铭辉</div>
 				<div class="title_t2">专业从事安防监控设备批发、安防建设工程设计与施工</div>
@@ -118,104 +111,130 @@
 				<div class="cl"></div>
 			</ul>
 		</div>
-		<div class="title">
-			<div class="title_t1">我们的服务</div>
-			<div class="title_t2">贴合您的业务场景，轻松实现方案集成</div>
-		</div>
-		<div class="swiper-container min" id="swiper1">
-			<div class="swiper-wrapper">
-      				<div class="swiper-slide">
-					<img src="image/service1.jpg" alt="">
-					<div class="ser_text">
-						<div class="ser_text1">旅游景区解决方案</div>
-						<div class="ser_text2">Tourist attraction</div>
-					</div>
-				</div>	
-				<div class="swiper-slide">
-					<img src="image/service2.jpg" alt="">
-					<div class="ser_text">
-						<div class="ser_text1">智能变电站综合辅助系统解决方</div>
-						<div class="ser_text2">Intelligent Substation</div>
-					</div>
-				</div>	
-				<div class="swiper-slide">
-					<img src="image/service1.jpg" alt="">
-					<div class="ser_text">
-						<div class="ser_text1">农业解决方案</div>
-						<div class="ser_text2">Agricultural Solutions</div>
-					</div>
-				</div>	
-				<div class="swiper-slide">
-					<img src="image/service2.jpg" alt="">
-					<div class="ser_text">
-						<div class="ser_text1">智慧监狱整体解决方案</div>
-						<div class="ser_text2">Wisdom Prison</div>
-					</div>
-				</div>	
-				<div class="swiper-slide">
-					<img src="image/service1.jpg" alt="">
-					<div class="ser_text">
-						<div class="ser_text1">企业综合安防解决方案</div>
-						<div class="ser_text2">Enterprise Comprehensive Security</div>
-					</div>
-				</div>	
-				<div class="swiper-slide">
-					<img src="image/service2.jpg" alt="">
-					<div class="ser_text">
-						<div class="ser_text1">智慧社区解决方案</div>
-						<div class="ser_text2">Smart Community</div>
-					</div>
-				</div>	
-				<div class="swiper-slide">
-					<img src="image/service1.jpg" alt="">
-					<div class="ser_text">
-						<div class="ser_text1">智慧园区解决方案</div>
-						<div class="ser_text2">Smart Park</div>
-					</div>
-				</div>	
-				<div class="swiper-slide">
-					<img src="image/service2.jpg" alt="">
-					<div class="ser_text">
-						<div class="ser_text1">森林防火系统解决方案</div>
-						<div class="ser_text2">Forest Fire Prevention</div>
-					</div>
-				</div>	
-			  
-
+		<!-- 关于铭辉结束 -->
+		<!-- 我们的服务开始 -->
+		<div class="service">
+			<div class="title">
+				<div class="title_t1">我们的服务</div>
+				<div class="title_t2">贴合您的业务场景，轻松实现方案集成</div>
 			</div>
-			<!-- Add Arrows -->
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-			
-		</div>			
-		<script>
-		   if($(window).width()>1023){
-		   	$('#pc_ban_one').show();
-		   	$('#m_ban_one').hide();
-		   }else{
-		   	$('#pc_ban_one').hide();
-		   	$('#m_ban_one').show();
-		   }
-		   $(window).resize(function(){
-		    if($(window).width()>1023){
-		   		$('#pc_ban_one').show();
-		   		$('#m_ban_one').hide();
-		   }else{
-		   		$('#pc_ban_one').hide();
-		   		$('#m_ban_one').show();
-		   }
-		   })
- 	   </script>
+			<div class="swiper-container service-swiper" id="swiper1">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="image/service1.jpg" alt="">
+						<div class="ser_text">
+							<div class="ser_text1">旅游景区解决方案</div>
+							<div class="ser_text2">Tourist attraction</div>
+						</div>
+					</div>	
+					<div class="swiper-slide">
+						<img src="image/service2.jpg" alt="">
+						<div class="ser_text">
+							<div class="ser_text1">智能变电站综合辅助系统解决方</div>
+							<div class="ser_text2">Intelligent Substation</div>
+						</div>
+					</div>	
+					<div class="swiper-slide">
+						<img src="image/service1.jpg" alt="">
+						<div class="ser_text">
+							<div class="ser_text1">农业解决方案</div>
+							<div class="ser_text2">Agricultural Solutions</div>
+						</div>
+					</div>	
+					<div class="swiper-slide">
+						<img src="image/service2.jpg" alt="">
+						<div class="ser_text">
+							<div class="ser_text1">智慧监狱整体解决方案</div>
+							<div class="ser_text2">Wisdom Prison</div>
+						</div>
+					</div>	
+					<div class="swiper-slide">
+						<img src="image/service1.jpg" alt="">
+						<div class="ser_text">
+							<div class="ser_text1">企业综合安防解决方案</div>
+							<div class="ser_text2">Enterprise Comprehensive Security</div>
+						</div>
+					</div>	
+					<div class="swiper-slide">
+						<img src="image/service2.jpg" alt="">
+						<div class="ser_text">
+							<div class="ser_text1">智慧社区解决方案</div>
+							<div class="ser_text2">Smart Community</div>
+						</div>
+					</div>	
+					<div class="swiper-slide">
+						<img src="image/service1.jpg" alt="">
+						<div class="ser_text">
+							<div class="ser_text1">智慧园区解决方案</div>
+							<div class="ser_text2">Smart Park</div>
+						</div>
+					</div>	
+					<div class="swiper-slide">
+						<img src="image/service2.jpg" alt="">
+						<div class="ser_text">
+							<div class="ser_text1">森林防火系统解决方案</div>
+							<div class="ser_text2">Forest Fire Prevention</div>
+						</div>
+					</div>	
+				</div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>		
+			<a href="#" class="ser_more">了解全部服务项目   ></a>
+		</div>
+		<!-- 我们的服务结束 -->
+		<!-- 底部开始 -->
+		<div class="bottom">
+			<div class="common bottom-inner over">
+				<div class="bottom-top">
+					<div class="bottom-logo">
+						<img src="image/bottom-logo.png" alt="">
+					</div>
+					<div class="bottom-img">
+						<img src="image/QQ.png" alt="">
+						<img src="image/wechat.png" alt="">
+					</div>
+					<div>
+						<span style="color:#FFFFFF;">技术支持：</span>
+						<a href="#">
+							<span style="color:#FFFFFF;">龙采科技</span>
+						</a><br />
+						<span style="color:#FFFFFF;"> 备案号：</span>
+						<a href="#">
+							<span style="color:#FFFFFF;">黑ICP备17002433号</span>
+						</a>
+					</div>
+				</div>
+				<div class="bottom-middle">
+					<div class="bottom-middle-title">联系我们</div>
+					<div class="bottom-middle-content">总部地址：黑龙江省哈尔滨市南岗区宣普街32号<br />
+					电话：王经理&nbsp;<span style="line-height:1.5;">15846066999</span><br />
+					传真：0451-82536466</div>
+				</div>
+				<div class="bottom-bottom">
+					<div class="bottom-bottom-title">快捷链接</div>
+					<div>
+						
+						<a href="#" target="">联系我们</a>
+						<a href="#" target="">新闻中心</a>
+						<a href="#" target="">成功案例</a>
+						<a href="#" target="">服务项目</a>
+						<a href="#" target="">产品中心</a>
+						<a href="#" target="">关于铭辉</a>
+						<a href="#" target="">首页</a>
+						
+					</div>
+				</div>
+			</div>
+			<div class="copyright">Copyright &copy; 2020 哈尔滨铭辉安防设备有限公司 <br>All rights reserved</div>
+		</div>
+		<!-- 底部结束 -->
 		<script>
 			var swiper0 = new Swiper('#swiper0', {
-				//autoplay: true,//可选选项，自动滑动
 				autoplay : {
 					delay:5000
 				},
-				// navigation: {
-				// 	nextEl: '.swiper-button-next',
-				// 	prevEl: '.swiper-button-prev',
-				// },
 				pagination: {
 					el: '.swiper-pagination',
 					clickable :true,
@@ -228,10 +247,6 @@
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
 				},
-				// pagination: {
-				// 	el: '.swiper-pagination',
-				// 	clickable :true,
-				// },
 				slidesPerView:'auto',
 				spaceBetween : 20,
 				breakpoints: { 
@@ -241,19 +256,11 @@
 			    }
 			  }
 			});
-			$(".m_l_list li > a").click(function(){
-				$(this).siblings(".m_list_nav").slideToggle();
-				$(this).toggleClass("current")
-			})
-			$(".m_l_btn").click(function(){
-				$(".m_l_list").slideToggle()
-				$(this).toggleClass("m_l_btn1")
-			})
-			$(".phone_nav").click(function(){
-				$(".p_nav").toggleClass("p_nav1")
+			$(".header-nav").click(function(){
+				$(".hidden-nav").toggleClass("visible-nav")
 			})
 			$(".search").click(function(){
-				$(".ser_k").slideToggle()
+				$(".search-part").slideToggle()
 			})
 		</script>
 				
