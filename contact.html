@@ -28,8 +28,8 @@
 			<ul class="hidden-nav">
 				<li> <a href="index.html">首页</a> </li>
 				<li> <a href="about.html">关于铭辉</a> </li>
-				<li> <a href="service.html">产品中心</a> </li>
-				<li> <a href="#">服务项目</a> </li>
+				<li> <a href="product.html">产品中心</a> </li>
+				<li> <a href="service.html">服务项目</a> </li>
 				<li> <a href="success.html">成功案例</a> </li>
 				<li> <a href="news.html">新闻中心</a> </li>
 				<li> <a href="contact.html">联系我们</a> </li>
@@ -38,7 +38,7 @@
 	</header>
 
 	<!-- 海报开始 -->
-	<div class="poster" id="m_ban_one">
+	<div class="poster">
 		<div class="poster-text">
 			<div class="poster-text1">黑龙江安防常任理事单位</div>
 			<div>专业从事安防监控设备批发、安防建设工程设计与施工</div>
@@ -54,18 +54,16 @@
 					<span></span>
 					<span></span>
 				</div>
-				<!-- <div class="m_l_btn"></div> -->
-				关于铭辉
+				联系我们
 			</div>
 		</div>
 		<div class="main-content">
 			<div class="main-content-title">
-				<div class="main-content-title-top">关于铭辉</div>
+				<div class="main-content-title-top">联系我们</div>
 				<div class="main-content-title-bottom">
-					您的当前位置：<a href="index.html">网站首页</a> / <a href="about.html">关于铭辉</a> / 关于铭辉
+					您的当前位置：<a href="index.html">网站首页</a> / <a href="contact.html">联系我们</a> / 联系我们
 				</div>
 			</div>
-
 			<div class="main-content-bottom" style="font-size: 0.28rem;line-height: 4;">
 				黑龙江省哈尔滨市南岗区宣普街32号
 			</div>
@@ -105,7 +103,6 @@
 			<div class="bottom-bottom">
 				<div class="bottom-bottom-title">快捷链接</div>
 				<div>
-
 					<a href="#" target="">联系我们</a>
 					<a href="#" target="">新闻中心</a>
 					<a href="#" target="">成功案例</a>
@@ -121,31 +118,6 @@
 	</div>
 	<!-- 底部结束 -->
 	<script>
-		var swiper0 = new Swiper('#swiper0', {
-			autoplay: {
-				delay: 5000
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-			loop: true,
-		});
-		var swiper1 = new Swiper('#swiper1', {
-			autoplay: true,//可选选项，自动滑动
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-			slidesPerView: 'auto',
-			spaceBetween: 20,
-			breakpoints: {
-				768: {  //当屏幕宽度大于等于768 
-					slidesPerView: 1,
-					spaceBetween: 0
-				}
-			}
-		});
 		$(".header-nav").click(function () {
 			$(".hidden-nav").toggleClass("visible-nav")
 		})
